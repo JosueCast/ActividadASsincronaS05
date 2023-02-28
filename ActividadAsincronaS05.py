@@ -61,25 +61,26 @@ match option:
         frase_4 = "Programado con Nico pyton " 
         # Random numero esto esta de mas
         numb_random = random.randint(1,4)
+        print(numb_random)
         #sacando frase aleatorio para dinamismo
-        for i in str(numb_random):
-             match option:
-                case "1": 
+        
+        match numb_random:
+                case 1: 
                      print(frase_1)
                      word = input("Palabra a buscar: ")
                      word_search= frase_1.find(word)
                      print(word_search)
-                case "2":   
+                case 2:   
                      print(frase_2)
                      word = input("Palabra a buscar: ")
                      word_search= frase_2.find(word)
                      print(word_search)
-                case "3": 
+                case 3: 
                      print(frase_3)
                      word = input("Palabra a buscar: ")
                      word_search= frase_3.find(word)
                      print(word_search)
-                case "4": 
+                case 4: 
                      print(frase_4)
                      word = input("Palabra a buscar: ")
                      word_search= frase_4.find(word)
